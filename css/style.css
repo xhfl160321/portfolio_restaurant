@@ -1,0 +1,590 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+a,
+p {
+    text-decoration: none;
+    color: #0A4DA6;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+/* font */
+font {
+    font-family: 'Dancing Script', cursive;
+    /*로고폰트*/
+    font-family: 'Karla', sans-serif;
+    /*con 폰트*/
+    font-family: 'Playfair Display', serif;
+    /*title 폰트*/
+    font-family: 'Ubuntu', sans-serif;
+    /*menu 폰트*/
+}
+
+/* wrap */
+#wrap {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(242, 183, 5, 0.15);
+}
+
+/******************************************************/
+/* 배경 이미지 */
+.bgimg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -50;
+}
+
+.bgimg img {
+    width: 100%;
+    height: 100%;
+}
+
+/******************************************************/
+/* table */
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #0A4DA6;
+    width: 100%;
+    height: 100vh;
+}
+
+.tg td {
+    border: solid 1.5px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg th {
+    border: solid 1.5px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+}
+
+/******************************************************/
+/* table custom */
+/* thead */
+thead {
+    width: 100%;
+    height: 10%;
+}
+
+.tr1_th1 {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 80px;
+    /*   background: pink; */
+}
+
+.logo a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+.call {
+    float: right;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    /*   background: pink; */
+}
+
+.call a {
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+}
+
+/* tbody */
+tbody {
+    width: 100%;
+    height: 90%;
+}
+
+tbody tr:last-child {
+    width: 100%;
+    height: 5%;
+}
+
+/******************************************************/
+/* menu */
+.tr1_td1 {
+    width: 15%;
+    text-align: right;
+}
+
+.tr1_td1 * {
+    text-align: right;
+}
+
+.tr1_td1 p {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #0A4DA6;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.tr1_td1 .menu {
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.menu>li {
+    /*   background: pink; */
+    padding-top: 15px;
+}
+
+.menu>li>a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+.menu>li>a:hover,
+.submenu>li>a:hover {
+    color: #D90B0B;
+}
+
+.submenu {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.submenu>li {
+    width: 100%;
+    height: 45px;
+    /*   background: lime; */
+}
+
+.submenu>li>a {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/******************************************************/
+/* 메뉴 사진 및 설명 칸 */
+.tr1_td2 {
+    height: 60%;
+}
+
+.tr1_td2 .left {
+    float: left;
+    width: 30%;
+    height: 100%;
+    /*   background: pink; */
+}
+
+/* 첫번째 메뉴 이름 제외하고 모두 hide */
+.tr1_td2 .left .menuList li:nth-child(n+2) {
+    /*   display: none; */
+}
+
+.tr1_td2 .left .menuList {
+    width: 100%;
+    height: 100%;
+}
+
+.tr1_td2 .left .menuList li {
+    width: 100%;
+    height: 100%;
+}
+
+.tr1_td2 .left .menuList li .topCon {
+    width: 30%;
+    height: 45%;
+    margin-left: 150px;
+    text-align: center;
+    /*   background: green; */
+}
+
+.tr1_td2 .left .menuList li .topCon p:first-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    /*   font-style: italic; */
+    font-weight: bold;
+    color: #D90B0B;
+    padding-top: 70px;
+}
+
+.tr1_td2 .left .menuList li .topCon p:nth-child(2) {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    border-top: solid 1px #0A4DA6;
+    border-bottom: solid 1px #0A4DA6;
+}
+
+.tr1_td2 .left .menuList li .topCon p:last-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    /*   font-style: italic; */
+    color: #D90B0B;
+}
+
+.tr1_td2 .left .menuList li .midCon {
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    margin-left: 150px;
+    /*   background: lightgreen; */
+}
+
+.tr1_td2 .left .menuList li .midCon p:first-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    border-top: solid 1px #0A4DA6;
+    color: #D90B0B;
+}
+
+.tr1_td2 .left .menuList li .midCon p:last-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    border-bottom: solid 1px #0A4DA6;
+}
+
+.tr1_td2 .left .menuList li .lastCon {
+    width: 30%;
+    height: 25%;
+    margin-left: 150px;
+    margin-top: 15px;
+    /*   background: green; */
+}
+
+.tr1_td2 .left .menuList li .lastCon p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #730909;
+}
+
+.tr1_td2 .left .menuList li .lastCon p span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #730909;
+}
+
+.tr1_td2 .right {
+    float: left;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /*   background: lightblue; */
+}
+
+.tr1_td2 .right .imgList {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    z-index: 5;
+}
+
+.tr1_td2 .right .imgList ul {}
+
+.tr1_td2 .right .imgList ul li {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.tr1_td2 .right .imgList ul li img {
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+/* 첫번째 메뉴 사진 제외하고 모두 hide */
+.tr1_td2 .right .imgList ul li:nth-child(n+2) {
+    /*   display: none; */
+}
+
+.tr1_td2 .right .stamp {
+    width: 150px;
+    height: 156px;
+    border: double 6px #D90B0B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 480px;
+    margin-top: -130px;
+    position: absolute;
+}
+
+.tr1_td2 .right .stamp p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #D90B0B;
+    border-top: solid 2px #D90B0B;
+    border-bottom: solid 2px #D90B0B;
+    text-align: center;
+    transform: rotate(25deg);
+}
+
+/******************************************************/
+/* 주재료 아이콘 탭 */
+.tr2_td1 {
+    width: 43%;
+    height: 100%;
+
+}
+
+.tr2_td1 .left {
+    float: left;
+    width: 50%;
+    height: 90%;
+    margin-left: 7.5%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*   background: lightpink; */
+}
+
+.tr2_td1 .left img {
+    width: 130px;
+    height: 130px;
+}
+
+.tr2_td1 .left .iconList ul li p:nth-child(2) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: solid 1px #0A4DA6;
+    letter-spacing: 2.5px;
+}
+
+.tr2_td1 .left .iconList ul li p:nth-child(3) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+/* 첫번째 메뉴 아이콘 제외하고 모두 hide */
+.tr2_td1 .left .iconList ul li:nth-child(n+2) {
+    display: none;
+}
+
+.tr2_td1 .right {
+    float: left;
+    width: 35%;
+    height: 90%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   background: pink; */
+}
+
+.tr2_td1 .right .stamp {
+    width: 150px;
+    height: 156px;
+    border: double 6px #0A4DA6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr2_td1 .right .stamp p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-top: solid 2px #0A4DA6;
+    border-bottom: solid 2px #0A4DA6;
+    text-align: center;
+    transform: rotate(-25deg);
+}
+
+/******************************************************/
+/* 직원 소개 */
+.tr2_td2 {
+    width: 21%;
+    height: 100%;
+}
+
+.tr2_td2 .con {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 3.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    /*   background: pink; */
+}
+
+.tr2_td2 .con p:nth-child(2n) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.tr2_td2 .con p:nth-child(2n+1) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 2.5px;
+}
+
+/******************************************************/
+/* time */
+.tr2_td3 {
+    width: 21%;
+    height: 100%;
+}
+
+.tr2_td3 .time {
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-top: 3.5%;
+    /*   background: pink; */
+}
+
+.tr2_td3 .time .open,
+.tr2_td3 .time .close {
+    float: left;
+    width: 40%;
+    height: 90%;
+    /*   background: green; */
+}
+
+.tr2_td3 .time .open p:first-child,
+.tr2_td3 .time .close p:first-child,
+.tr2_td3 .holi p:first-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.tr2_td3 .time .open p:last-child,
+.tr2_td3 .time .close p:last-child,
+.tr2_td3 .holi p:last-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tr2_td3 .holi {
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+    /*   background: lightpink; */
+}
+
+.tr2_td3 .holi p:first-child {
+    padding-bottom: 10px;
+}
+
+.tr2_td3 .stamp {
+    width: 85%;
+    height: 30%;
+    border: double 6px #D90B0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 3%;
+    /*   background: lightpink; */
+}
+
+.tr2_td3 .stamp p {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/******************************************************/
+/* 맨 하위 네비 */
+.leftFoot {
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.leftFoot p,
+.midFoot ul li a {
+    font-family: 'Karla', sans-serif;
+    font-size: 13px;
+}
+
+.midFoot {
+    float: left;
+    width: 400px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.midFoot ul {
+    width: 100%;
+}
+
+.midFoot ul li {
+    float: left;
+    width: 33.33%;
+}
+
+.rightFoot {
+    float: right;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 400px;
+}
+
+.rightFoot a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    pointer-events: none;
+}
