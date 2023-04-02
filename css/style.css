@@ -36,7 +36,7 @@ font {
 /* wrap */
 #wrap {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     background: rgba(242, 183, 5, 0.15);
 }
